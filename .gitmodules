@@ -1,0 +1,3 @@
+[submodule "lib/peppol"]
+	path = lib/peppol
+	url = https://github.com/OpenPEPPOL/peppol-bis-invoice-3
