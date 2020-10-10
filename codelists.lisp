@@ -43,7 +43,7 @@
                   codes)
                  :test 'equalp))
               (varname (alexandria:symbolicate title)))
-          (with-open-file (file (ensure-directories-exist (asdf:system-relative-pathname :peppol (format nil "code-lists/~a.lisp" title)))
+          (with-open-file (file (ensure-directories-exist (asdf:system-relative-pathname :peppol (format nil "code-lists/~a.lisp" (substitute #\- #\/ title))))
                                 :direction :output
                                 :external-format :utf8
                                 :if-does-not-exist :create
